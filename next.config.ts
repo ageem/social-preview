@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  basePath: '/social-preview',
+  images: {
+    unoptimized: true,
+  },
+  // Keep any existing config options you have
 };
 
 export default nextConfig;
