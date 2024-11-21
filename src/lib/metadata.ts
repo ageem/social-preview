@@ -17,7 +17,7 @@ export async function scrapeMetadata(url: string): Promise<Metadata> {
     const metaTags = root.querySelectorAll('meta');
     const title = root.querySelector('title')?.text || '';
     
-    let metadata = {
+    const metadata = {  // Changed from 'let' to 'const'
       title: title,
       description: '',
       image: '',
